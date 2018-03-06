@@ -1,85 +1,65 @@
-/* latin-ext */
 
+/* this file contains all the CSS code */
+/* might need to import google fronts */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+
+.containter {
     background-color: white;
+    padding-right:0;
+    padding-left:0;
+    margin-right:0;
+    margin-left:0;
 }
 
-li {
-    float: right;
+.text-section {
+    position:relative;
+    margin:1% 0 0 0;
+    padding:0;
+    z-index:3;
 }
 
-li menu {
-    display: block;
-    font-family: raleway;
-    font-size: large;
-    color: gray;
-    text-align: center;
-    padding: 14px 40px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li menu:hover {
-    background-color: whitesmoke;
-}
-
-h1 {
-    font-family: raleway;
-    color: gray;
+.title {
+    font-family:"Raleway";
+    color: grey;
     font-size: 10ch;
-
+    font-weight:600;
+    font-style: inherit;
+    margin-left: 20%;
+    margin-top: 5%;
+    letter-spacing: 5px;
 }
 
-
-.diamond {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 52px;
-    height: 0;
-    position: relative;
-    opacity: 0.72;
-    margin: 46px 0 50px 600px;
-    border: 25px solid rgba(0,0,0,0);
-    border-top-width: 0;
-    border-bottom-color: #1abc9c;
-    font: normal 100%/normal Arial, Helvetica, sans-serif;
-    color: rgba(0,0,0,1);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    -webkit-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 10ms;
-    -moz-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 10ms;
-    -o-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 10ms;
-    transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 10ms;
-    -webkit-transform: rotateZ(-17.188733853924695deg)   ;
-    transform: rotateZ(-17.188733853924695deg)   ;
+.text-main {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
 }
 
-.diamond::after {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 1px;
-    height: 0;
-    position: absolute;
-    content: "";
-    opacity: 0.82;
-    top: 25px;
-    left: -25px;
-    border: 50px solid rgba(0,0,0,0);
-    border-top: 70px solid #1abc9c;
-    border-bottom-width: 0;
-    font: normal 100%/normal Arial, Helvetica, sans-serif;
-    color: rgba(0,0,0,1);
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    text-shadow: none;
+.text-main-duo {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    position:relative;
+    max-width:97%;
+    text-align: justify;
+    padding: 2% 3% 2% 5%;
+    margin:0 !important;
 }
 
+.image {
+    position:relative;
+    margin:1% 0 0 5%;
+    padding:5% 0 5% 0;
+    z-index:3;
+    width: 30%;
+    height: 50%;
+}
 
+#footer {
+    font-family:"Raleway";
+    font-weight: 300;
+}
