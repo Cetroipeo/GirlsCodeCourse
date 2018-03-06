@@ -1,2 +1,18 @@
 /* this file contains all the CSS code */
 /* might need to import google fronts */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.containter {
+    background-color: white;
+    padding-right:0;
+    padding-left:0;
+    margin-right:0;
+    margin-left:0;
+}
+
+.text-main {
+    font-family: "Raleway";
+    font-weight: 300px;
+    font-size: 20px;
+    color: black;
+}
