@@ -20,7 +20,7 @@
     font-size: 60px;
     font-weight:500;
     font-style: inherit;
-    margin-left: 35%;
+    margin-left: 30%;
     margin-top: 2%;
     letter-spacing: 10px;
 }
@@ -47,44 +47,20 @@
     text-align: justify;
 }
 
-.columnDashboard1 {
-     float: left;
-     width: 100%;
-     margin: 1% 0 0 -4%;
-    padding: 7% 5% 7% 5%;
-    background-color: #FA7921;
-}
-
-.columnDashboard2 {
-    float: left;
-    width: 100%;
-    margin: 1% 0 0 0;
-    padding: 7% 5% 7% 5%;
-    background-color: #464655;
-}
-
-.columnDashboard3 {
-    float: left;
-    width: 100%;
-    margin: 1% 0 0 0;
-    padding: 7% 5% 7% 5%;
-    background-color: #40BCD8;
-}
-
 .columnDashboard4 {
     float: left;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 1% 2% 5% 2%;
-    background-color: #DABECA;
+    background-color: #E6F6FD;
 }
 
 .columnDashboard5 {
     float: left;
-    width: 100%;
-    margin: 1% 2% 5% 2%;
+    width: 80%;
+    margin: 1% 0 5% 5%;
     height: auto;
-    background-color: #DABECA;
+    background-color: #E6F6FD;
 }
 
 .text-buttons-top{
@@ -127,6 +103,11 @@
     font-weight: 700;
     font-size: 40px;
     color: white;
+}
+
+.photos {
+    height: 40%;
+    width: 40%;
 }
 /* latin-ext */
 
@@ -232,4 +213,6 @@ a:visited{
     text-overflow: clip;
     text-shadow: none;
 }
+
+
 
