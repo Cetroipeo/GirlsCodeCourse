@@ -1,10 +1,21 @@
+$(document).ready(function(){
 
-function myFunction() {
-    var x = document.getElementById("home-read-more");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+    //state global variable saying if the divs are shown or hidden
+    var state = "hidden";
+    $("#info").hide();
+
+    $("#showHomeDivs").click(function(){
+
+        if(state === "hidden"){
+            $("#info").show("slow");
+
+            state = "shown"
+        } else {
+            $("#info").hide("slow");
+
+            state = "hidden"
+        }
+
+    });
+});
 

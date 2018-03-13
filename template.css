@@ -5,13 +5,100 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 
+
 body {
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    font-family: "Raleway";
 }
 
-.containter {
+h1 {
+    color: grey;
+    font-size: 10ch;
+    font-weight:600;
+    font-style: inherit;
+    margin-left: 36%;
+    margin-top: 10%;
+    letter-spacing: 5px;
+}
+
+.h1-contact {
+    color: grey;
+    font-size: 20px;
+    font-weight:500;
+    margin-left: 280px;
+    margin-top: 1%;
+    letter-spacing: 5px;
+}
+
+.container-white {
     background-color: white;
+    margin-right:200px;
+    margin-left:200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container-red {
+    background-color: #CA0505;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    opacity: 0.7;
+    padding: 50px;
+}
+
+.columnHomeOne {
+    float: left;
+    width: 100%;
+    height: 500px;
+    margin: 1% 0 0 2%;
+    padding: 5% 0% 0 10%;
+}
+
+.columnHome {
+    float: left;
+    width: 100%;
+    margin: 5% 2% 0 5%;
+    height: 500px;
+    padding: 5% 2% 0 9%;
+}
+
+
+.column-more1 {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 1% 2% 5% 9%;
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.column-more2 {
+    float: left;
+    width: 100%;
+    margin: 1% 2% 5% 2%;
+    height: auto;
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.column-more3 {
+    float: left;
+    width: 100%;
+    margin: 1% 2% 5% 2%;
+    height: auto;
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container-grey {
+    background-color: whitesmoke;
     padding-right:0;
     padding-left:0;
     margin-right:0;
@@ -26,7 +113,6 @@ body {
 }
 
 .title {
-    font-family:"Raleway";
     color: grey;
     font-size: 10ch;
     font-weight:600;
@@ -38,7 +124,6 @@ body {
 
 
 .home-title {
-    font-family:"Raleway";
     color: grey;
     font-size: 10ch;
     font-weight:600;
@@ -50,14 +135,12 @@ body {
 
 
 .text-main {
-    font-family: "Raleway";
     font-weight: 300;
     font-size: 20px;
     color: black;
 }
 
 .text-main-duo {
-    font-family: "Raleway";
     font-weight: 300;
     font-size: 20px;
     color: black;
@@ -68,55 +151,20 @@ body {
     margin:0 !important;
 }
 
-.image {
-    position:relative;
-    margin:1% 0 0 5%;
-    padding:5% 0 5% 0;
-    z-index:3;
-    width: 30%;
-    height: 50%;
-}
 
-#footer {
-    font-family:"Raleway";
-    font-weight: 300;
-}
-/* latin-ext */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.nav {
     background-color: white;
 }
 
-li {
-    float: right;
-}
 
-li menu {
-    display: block;
-    font-family: raleway;
-    font-size: large;
+.nav-li {
     color: gray;
-    text-align: center;
-    padding: 14px 40px;
-    text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-li menu:hover {
+.nav-li:hover {
     background-color: whitesmoke;
-}
-
-h1 {
-    font-family: raleway;
-    color: gray;
-    font-size: 10ch;
-
 }
 
 
@@ -128,7 +176,7 @@ h1 {
     height: 0;
     position: relative;
     opacity: 0.72;
-    margin: 46px 0 50px 600px;
+    margin: 0px 0 50px 640px;
     border: 25px solid rgba(0, 0, 0, 0);
     border-top-width: 0;
     border-bottom-color: #CA0505;
@@ -165,119 +213,32 @@ h1 {
     text-shadow: none;
 }
 
-.container-white{
-    width: 1000px;
-    padding: 60px;
-    margin-top: 220px;
-    margin-bottom: 10px;
-    margin-left: 150px;
-    background-color: white;
+
+
 
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-.container-sq{
-    background-color: white;
-    width: 10px;
-    padding: 1px;
-    margin-left: 450px;
-}
-
-
-
-.text-home {
-    font-family: raleway;
+.text-home-dos {
     color: black;
-    font-size: 35px;
-
-}
-
-.text-home2 {
-    font-family: raleway;
-    color: black;
-    font-size: 20px;
+    font-size: 30px;
     text-justify: inter-word;
 
 }
 
 .home-video {
-    padding: 100px
-
+    padding: 10px;
+    margin-left: 100px;
 }
 
-.button-home {
-    display: inline-block;
-    border-radius: 3px;
-    background-color: grey;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 15px;
-    width: 140px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
 
-.button-home span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.button-home span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.button-home:hover span {
-    padding-right: 25px;
-}
-
-.button-home:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-.button-home{
-
-}
-
-/*Read more appear on click */
 
 #home-read-more {
     width: 100%;
-    padding: 60px 0;
     text-align: left;
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 #container-1{
@@ -300,19 +261,74 @@ h1 {
     background-color: white;
 }
 
+.button-more{
+    color: #CA0505;
+    border-color: #CA0505;
+    opacity: 0.82;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    outline: none;
 
-i {
-    border: solid black;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 5px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
 }
 
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+.button-more:hover{
+    color: whitesmoke;
+    background-color: #CA0505;
+    border-color: #CA0505;
+    opacity: 0.82;
+    outline: none;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 85px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 550px;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
 }

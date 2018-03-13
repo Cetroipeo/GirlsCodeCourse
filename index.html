@@ -2,55 +2,105 @@
 <html>
     <head>
         <title>RUBY</title>
+        <!--bootstrap css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- link to template.css stylesheet -->
         <link rel="stylesheet" type="text/css" href="template.css">
-        <!-- Bootstrap -->
-        <script type="text/javascript" src=Home.js></script>
     </head>
     <body>
-
-    <ul>
-
-        <li><menu href="contact.asp">Contact</menu></li>
-        <li><menu href="dashboard.asp">Dashboard</menu></li>
-        <li><menu href="about.asp">About Us</menu></li>
-        <li><menu href="home.asp">Home</menu></li>
-    </ul>
-
-    <div class="container">
-        <div class="text-section col-sm-10">
-            <h1 class="home-title">R U B Y </h1>
-        </div>
-                <div class="diamond"></div>
-
-    </div>
-
-
-    <div class="container-white">
+    <div class="container-fluid">
         <div class="row">
-            <div class="column">
-                <img src="cylinder%20assembled%20v3%20GIF.gif" alt="HTML5 Icon" style="width:400px;height:400px;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+               <div class="col-lg-12">
+                   <h1>
+                       R U B Y
+                   </h1>
+               </div>
+           </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="diamond">
+                    </div>
+                </div>
             </div>
-            <div class="column">
-                <h2 class="text-home">Welcome</h2>
-                <p class="text-home2">Say hello to the lab of the 21st century</p>
-                <p class="text-home2">Meet RUBY: the first ever modular, plug and play incubator</p>
-                <p class="text-home2">Monitor your cultures and control conditions from the comfort of your home</p>
+
+
+        <div class="container-white">
+            <div class="row">
+                <div class="text-main" style="width: 110%; text-align: center">
+                    <div class="columnHomeOne col-sm-5">
+                        <img src="cylinder%20assembled%20v3%20GIF.gif" alt="HTML5 Icon" style="width:400px;height:400px; margin-top: 30px;">
+                    </div>
+                    <div class="columnHome col-sm-5">
+                        <h2 style="font-size: 45px;"> Welcome</h2>
+                        <p style="font-size: 22px"> Say hello to the lab of the 21st century</p>
+                        <p style="font-size: 22px"> This is RUBY: the first ever modular, plug and play incubator</p>
+                        <p style="font-size: 22px"> Monitor your cultures and control conditions from the comfort of your home</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <button class="btn-lg button-more btn btn-light" id="showHomeDivs"> Explore </button>
             </div>
         </div>
 
-        <div class="container-sq">
-            <button onclick="myFunction()"><i class="arrow down"> </i> </button>
-        </div>
-    </div>
 
-    <div id="home-read-more">
-        BLA BLA BLA
-    </div>
-    <div id="container-1">
-    </div>
-    <div id="container-2">
-    </div>
+            <div class="row" id="info">
+                <div class="column-more1 col-lg-3">
+                    Assemble
+                    <img src="assemble.png" style="width:150px;height:100px;">
+                </div>
+                <div class="column-more2 col-lg-3">
+                    Monitor
+                    <img src="monitor2.png" style="width:148px;height:120px;">
+                </div>
+                <div class="column-more3 col-lg-3">
+                    Optimise
+                    <img src="optimise2.png" style="width:130px;height:110px;">
+                </div>
+                <div class="container-red">
+                    <p class="text-main" style="justify-content: center; color:whitesmoke; font-size: 30px">
+                        We challenge the traditional view that pieces of lab equipment has to have a single purpose and run on monolithic proprietary software. We are building a laboratory platform based on plug and play sensor modules able to stream back data in real time to any device.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
 
 
 
@@ -58,5 +108,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- link to own js -->
+    <script type="text/javascript" src=Home.js></script>
     </body>
 </html>
