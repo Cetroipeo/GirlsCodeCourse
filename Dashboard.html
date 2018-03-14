@@ -8,7 +8,69 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- link to CSS file -->
-    <link rel="stylesheet" type="text/css" href="template.css">
+    <link rel="stylesheet" type="text/css" href="Dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar-->
+    <div class="navbar">
+        <ul>
+            <li><menu> <a href="https://cetroipeo.github.io/GirlsCodeCourse/index">Home</a></menu></li>
+            <li><menu> <a href="https://cetroipeo.github.io/GirlsCodeCourse/AboutUs">About Us</a></menu></li>
+            <li><menu> <a href="https://cetroipeo.github.io/GirlsCodeCourse/Dashboard">Dashboard</a></menu></li>
+            <li><menu> <a href="https://cetroipeo.github.io/GirlsCodeCourse/contact">Contact</a></menu></li>
+        </ul>
+
+        <!-- header logo-->
+        <div class="diamond">
+            <h1 class="title" style="margin-left: 100px; font-size: 30px">RUBY</h1>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="container">
+        <div class="row">
+            <h1 class="title" style="padding-bottom: 0">Dashboard</h1>
+            <h2 class="text-main" style="font-size: 30px; font-weight: 300; color: #CA0505; margin-left: 5%;">Experiment Information</h2>
+            <p class="text-main col-sm-11" style="margin-bottom: 0;"><i>Aim: optimise the growth of recombinant microbial cells by changing key post induction conditions.</i></p>
+            <p class="text-main col-sm-11" style="margin-top: 0">E. coli cells are engineered to express the HFM protein used for the manufacture of the gastropal agent used for the preservation of food products. This experiment aims to optimise the post induction conditions in order to maximiize the overall yield of the HMF protein and ensure economical viability of the process. The effects of specific conditions on the rate of protein production will be explored.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+        <!-- Buttons-->
+            <div class="col-sm-2">
+                <button id="button-temp" type="button" class="btn btn-lg buttons" style="margin: 50px 0 0 30px">
+                    <span class="text-buttons">T</span>
+                </button>
+            </div>
+            <div class="col-sm-2">
+                <button id="button-pH" type="button" class="btn btn-lg buttons" style="margin: 250px 0 0 -168px">
+                    <span class="text-buttons">pH</span>
+                </button>
+            </div>
+            <div class="col-sm-2">
+                <button id="button-O2" type="button" class="btn btn-lg buttons" style="margin: 450px 0 0 -368px">
+                    <span class="text-buttons">O<sub>2</sub></span>
+                </button>
+            </div>
+            <div style="float: inherit; width:100%; margin: 0 0 0 30px; height:auto; overflow: scroll !important;" class="col-sm-12">
+                <p class="text-main" style="margin-left: 25%; margin-top: 5%"><b>Effects of post induction temperature on cell growth</b></p>
+                <div id="temperature_donut"></div>
+                <div id="ph_donut" style="margin-top: 10px"></div>
+                <div id="o_two_donut" style="margin-top: 10px"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+        <a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+        <a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+    </div>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,7 +78,6 @@
     <!-- Google Charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-    <script type="text/javascript">google.load("jquery", "1.3.2");</script>
     <script type="text/javascript">
 
         google.charts.load('current', {'packages':['corechart']});
@@ -149,7 +210,7 @@
                 $(graphToShow).show();
 
                 $("#applications-description").text("Effects of post induction temperature on cell growth");
-                
+
             });
 
             $("#button-pH").click(function(){
@@ -184,93 +245,5 @@
         });
 
     </script>
-
-    <style>
-        #applications-description {
-            position: relative;
-            max-width: 90%;
-            font-size: 1.5vw !important;
-            text-align: justify !important;
-            font-family: Raleway !important;
-            padding: 5% 12% 5% 10%;
-            margin: 0 0 0 90px;
-        }
-
-        .buttons-here {
-            border:none;
-            margin:0 0 5% 35%;
-            background-color: transparent;
-        }
-
-        .overlay-buttons-here {
-            position: absolute;
-            margin:1% 0 0 25% !important;
-            background-color: transparent;
-            border:none;
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-<!-- Navbar-->
-<div class="navbar">
-    <ul>
-        <li><menu> <a href="https://cetroipeo.github.io/GirlsCodeCourse/index">Home</a></menu></li>
-        <li><menu> <a href="https://cetroipeo.github.io/GirlsCodeCourse/AboutUs">About Us</a></menu></li>
-        <li><menu> <a href="https://cetroipeo.github.io/GirlsCodeCourse/Dashboard">Dashboard</a></menu></li>
-        <li><menu> <a href="https://cetroipeo.github.io/GirlsCodeCourse/contact">Contact</a></menu></li>
-    </ul>
-
-    <!-- header logo-->
-    <div class="diamond">
-        <h1 class="title" style="margin-left: 100px; font-size: 30px">RUBY</h1>
-    </div>
-</div>
-
-<!-- Body -->
-<div class="container">
-    <div class="row">
-        <h1 class="title" style="padding-bottom: 0">Dashboard</h1>
-        <h2 class="text-main" style="font-size: 30px; font-weight: 300; color: #CA0505; margin-left: 5%;">Experiment Information</h2>
-        <p class="text-main col-sm-11" style="margin-bottom: 0;"><i>Aim: optimise the growth of recombinant microbial cells by changing key post induction conditions.</i></p>
-        <p class="text-main col-sm-11" style="margin-top: 0">E. coli cells are engineered to express the HFM protein used for the manufacture of the gastropal agent used for the preservation of food products. This experiment aims to optimise the post induction conditions in order to maximiize the overall yield of the HMF protein and ensure economical viability of the process. The effects of specific conditions on the rate of protein production will be explored.</p>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-    <!-- Buttons-->
-        <div class="col-sm-2">
-            <button id="button-temp" type="button" class="btn btn-lg buttons" style="margin: 50px 0 0 30px">
-                <span class="text-buttons">T</span>
-            </button>
-        </div>
-        <div class="col-sm-2">
-            <button id="button-pH" type="button" class="btn btn-lg buttons" style="margin: 250px 0 0 -168px">
-                <span class="text-buttons">pH</span>
-            </button>
-        </div>
-        <div class="col-sm-2">
-            <button id="button-O2" type="button" class="btn btn-lg buttons" style="margin: 450px 0 0 -368px">
-                <span class="text-buttons">O<sub>2</sub></span>
-            </button>
-        </div>
-        <div style="float: inherit; width:100%; margin: 0 0 0 30px; height:auto; overflow: scroll !important;" class="col-sm-12">
-            <p class="text-main" style="margin-left: 25%; margin-top: 5%"><b>Effects of post induction temperature on cell growth</b></p>
-            <div id="temperature_donut"></div>
-            <div id="ph_donut" style="margin-top: 10px"></div>
-            <div id="o_two_donut" style="margin-top: 10px"></div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-    <a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-    <a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
-</div>
 </body>
 </html>
