@@ -53,7 +53,7 @@ h1 {
     width: 100%;
     height: 500px;
     margin: 1% 0 0 2%;
-    padding: 5% 0% 0 10%;
+    padding: 5% 0 0 10%;
 }
 
 .columnHome {
@@ -98,8 +98,11 @@ h1 {
 
 .container-grey {
     background-color: whitesmoke;
+    padding-right:0;
+    padding-left:0;
+    margin-right:0;
+    margin-left:0;
 }
-
 
 .text-section {
     background-color: white;
@@ -189,19 +192,35 @@ h1 {
     }
 }
 
-.nav {
+
+
+/*nav bar stuff*/
+/* Change the link color to #111 (black) on hover */
+.nav-container {
     background-color: white;
 }
 
-
-.nav-li {
-    color: gray;
+.navbar {
+    background-color: white;
 }
 
-/* Change the link color to #111 (black) on hover */
-.nav-li:hover {
+.nav-item {
+    line-height: 20px;
+    font-size: 25px;
+    background-color: white;
+    border-color: white;
+    margin-right:10px;
+    margin-left: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.nav-item:hover {
     background-color: whitesmoke;
 }
+
+
+
 
 
 .diamond {
@@ -212,7 +231,7 @@ h1 {
     height: 0;
     position: relative;
     opacity: 0.72;
-    margin: 0px 0 50px 640px;
+    margin: 0 0 50px 640px;
     border: 25px solid rgba(0, 0, 0, 0);
     border-top-width: 0;
     border-bottom-color: #CA0505;
@@ -248,6 +267,7 @@ h1 {
     text-overflow: clip;
     text-shadow: none;
 }
+
 
 
 .text-home-dos {
@@ -299,7 +319,7 @@ h1 {
     opacity: 0.82;
     margin-left: 500px;
     margin-bottom: 50px;
-    margin-top: 0px;
+    margin-top: 0;
     outline: none;
 
 }
@@ -380,7 +400,6 @@ h1 {
 }
 
 .text-buttons{
-    font-family: Raleway;
     font-weight: 700;
     font-size: 40px;
     color: white;
