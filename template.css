@@ -106,6 +106,8 @@ h1 {
 }
 
 .text-section {
+    background-color: white;
+    max-width: 90%;
     position:relative;
     margin:1% 0 0 0;
     padding:0;
@@ -114,12 +116,12 @@ h1 {
 
 .title {
     color: grey;
-    font-size: 10ch;
-    font-weight:600;
+    font-size: 60px;
+    font-weight:500;
     font-style: inherit;
-    margin-left: 20%;
-    margin-top: 5%;
-    letter-spacing: 5px;
+    margin-left: 30%;
+    margin-top: 2%;
+    letter-spacing: 10px;
 }
 
 
@@ -138,6 +140,9 @@ h1 {
     font-weight: 300;
     font-size: 20px;
     color: black;
+    padding:2% 0 2% 0;
+    margin:2% 0 2% 3%;
+    text-align: justify;
 }
 
 .text-main-duo {
@@ -146,12 +151,47 @@ h1 {
     color: black;
     position:relative;
     max-width:97%;
+    padding: 1% 3% 2% 1%;
+    margin:0 0 0 0;
     text-align: justify;
-    padding: 2% 3% 2% 5%;
-    margin:0 !important;
 }
 
+.columnDashboard4 {
+    float: left;
+    width: 80%;
+    height: auto;
+    margin: 1% 2% 5% 2%;
+    background-color: #E6F6FD;
+}
 
+.columnDashboard5 {
+    float: left;
+    width: 80%;
+    margin: 1% 0 5% 5%;
+    height: auto;
+    background-color: #E6F6FD;
+}
+
+.text-buttons-top{
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 
 
 
@@ -180,11 +220,7 @@ h1 {
     background-color: whitesmoke;
 }
 
-h1 {
-    color: gray;
-    font-size: 10ch;
-    letter-spacing: 7px;
-}
+
 
 
 
@@ -348,4 +384,31 @@ h1 {
 .fa-linkedin {
     background: #007bb5;
     color: white;
+
+.buttons {
+    position:absolute;
+    border: hidden;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    height:150px;
+    width:90%;
+    top:0;
+    z-index:100;
+    background-color: #CA0505;
+    display: block;
+    opacity: 0.7;
 }
+
+.text-buttons{
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+.photos {
+    height: 40%;
+    width: 40%;
+}
+
+
+
