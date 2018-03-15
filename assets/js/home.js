@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     //state global variable saying if the divs are shown or hidden
     var state = "hidden";
     $("#info").hide();

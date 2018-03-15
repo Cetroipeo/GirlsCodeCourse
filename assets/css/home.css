@@ -1,0 +1,25 @@
+/* this file contains all the CSS code */
+/* might need to import google fronts */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+
+body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    font-family: "Raleway";
+}
+
+.bg-lightblue{
+    background-color: #59a0cb;
+    opacity: 0.8;
+}
+
+.mini-div{
+    height: 300px;
+}
+
+.txt-red{
+    color: #ae0044;
+}

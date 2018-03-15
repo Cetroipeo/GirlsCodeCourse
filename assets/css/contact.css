@@ -1,0 +1,28 @@
+/* this file contains all the CSS code */
+/* might need to import google fronts */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+
+body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    font-family: "Raleway";
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-google{
+    color: #ff392d;
+}
+
+.fa-snapchat-ghost {
+    color: #e4df00;
+}
+
+.fa-linkedin {
+    color: #050ecd;
+}
